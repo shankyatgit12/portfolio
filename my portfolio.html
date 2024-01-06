@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashank S H - Portfolio</title>
+  <style>
+    /* General styles */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+    }
+
+    header {
+      background-color: #5e8cbc;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      transition: background-color 0.3s ease;
+    }
+
+    header:hover {
+      background-color: #072856;
+    }
+
+    header h1 {
+      margin-bottom: 0.5em;
+      font-size: 35px;
+      transition: font-size 0.3s ease;
+    }
+
+    header:hover h1 {
+      font-size: 50px;
+    }
+
+    header p {
+      font-style: italic;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    header:hover p {
+      opacity: 5;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 5px 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.05);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #5e8cbc;
+      transition: color 0.3s ease;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000000;
+      color: #fff;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 10 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer a:hover {
+      transform: scale(1.2);
+    }
+    #courses {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px; /* Added margin for spacing */
+    }
+
+    .course {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 30%;
+      text-align: center;
+    }
+
+    .course:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .course h3 {
+      color: #5e8cbc;
+      margin-bottom: 10px;
+    }
+
+    /* Heading style */
+    #courses-heading {
+      text-align: center;
+      margin-top: 20px;
+      color: #5e8cbc;
+    }
+    /* About Me Section */
+    #about {
+      overflow: hidden;
+    }
+
+    #about img {
+      width: 150px;
+      height: auto;
+      float: left;
+      margin-right: 20px;
+      border: 2px solid #5e8cbc;
+      border-radius: 50%;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    #about p {
+      margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    .contact {
+      margin-top: 50px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    header {
+    background-color: #5e8cbc;
+      color: #fff;
+      text-align: center;
+      padding: 1px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #072856;
+    }
+    #skills {
+      text-align: center;
+    }
+
+    #skills ul {
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    #skills ul li {
+      margin-bottom: 5px;
+    }
+
+    #skills a {
+      display: block;
+      padding: 10px 20px;
+      background-color: #5e8cbc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    #skills a:hover {
+      background-color: #072856;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+      header p {
+        font-size: 14px;
+      }
+      main {
+        padding: 5px 10px;
+      }
+      .project {
+        padding: 10px;
+      }
+    }
+  </style>
+   <script>
+    // JavaScript code for animation
+    const name = document.getElementById('name');
+    let startPosition = 0;
+
+    function animateName() {
+      setInterval(() => {
+        startPosition += 2;
+        name.style.transform = `translateX(${startPosition}px)`;
+        if (startPosition >= 40) {
+          startPosition = -200;
+        }
+      }, 50);
+    }
+
+    window.onload = animateName;
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+
+      
+      </ul>
+    </nav>
+    <h1>Shashank S H</h1>
+    <p>Student of SoCSE</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <img src="profile.jpg" alt="Shashank's Photo">
+      <h2>About Me</h2>
+      <p>"Technology enthusiast by day, aspiring innovator by night. I thrive on turning ideas into reality, utilizing my skills in coding, design, and problem-solving to create impactful solutions."</p>
+      <p>"Driven by a passion for continuous learning, I constantly seek new challenges that push the boundaries of my knowledge, allowing me to grow both personally and professionally."</p>
+      <p>"I strongly believe in the power of collaboration and teamwork. I enjoy exchanging ideas with like-minded individuals, as I find inspiration in the diverse perspectives that others bring to the table."</p>
+      <p>"Outside the realm of technology, I find solace in the world of art. Exploring different forms of creative expression fuels my imagination and often influences my approach to problem-solving."</p>
+    </section>
+
+    <main>
+      <h2 id="courses-heading">Courses Offered</h2>
+      
+      <section id="courses">
+        <div class="course">
+          <h3>Monthly Courses</h3>
+          <p>Offering short-term courses tailored for quick learning and skill enhancement on various topics. Duration: 1 month.</p>
+          <a href="link_to_monthly_course_purchase_page" class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="course">
+          <h3>Six-Month Courses</h3>
+          <p>Comprehensive courses designed for in-depth learning and project implementation. Duration: 6 months.</p>
+          <a href="link_to_six_month_course_purchase_page" class="buy-button">Buy Now</a>
+        </div>      
+        
+        <div class="course">
+          <h3>Yearly Courses</h3>
+          <p>Extensive courses covering advanced concepts, mentorship, and career guidance. Duration: 1 year.</p>
+          <a href="link_to_yearly_course_purchase_page" class="buy-button">Buy Now</a>
+        </div>
+  
+
+
+    </section>
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>E-commerce Car Browsing Website</h3>
+        <p>Designed and developed an interactive e-commerce platform specifically tailored for browsing and purchasing cars. Implemented a user-friendly interface enabling users to explore a wide range of vehicles, compare specifications, and schedule test drives directly through the website.</p>
+        <a href="C:\Users\shash\OneDrive\Desktop\CarVista\ECOMMERCE INNOVATION DEVOPS[product].html">View Project</a>
+      </div>   
+
+
+
+      <div class="project">
+        <h3>Music Recommendation System</h3>
+        <p>Developed an AI-powered music recommendation system that utilizes machine learning algorithms to suggest personalized playlists based on user preferences and listening habits. Integrated with popular music streaming APIs for data retrieval and analysis.</p>
+        <a href="https://github.com/yourusername/music-recommendation-system">View Project</a>
+      </div>
+      
+         
+      
+    </section>
+
+    <section class="#contact">
+      <h2>Contact Me</h2>
+      <a href="https://www.instagram.com/shank.xd/" target="_self"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
+      <a href="https://twitter.com/Foreverlegend71" target="_self"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/shashank-h-91b7482a8/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+    </section>
+    <li id="skills">
+      <a href="#skills">Skills</a>
+      <ol>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML/CSS</li>
+        <li>Java</li>
+        <!-- Add more skills as needed -->
+      </ol>
+    </li>
+  </ul>
+  </main>
+  
+
+  <footer>
+    <p>©Shashank S H - Portfolio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
