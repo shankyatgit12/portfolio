@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shashank S H - Portfolio</title>
   <style>
-    /* General styles */
+    
     body, h1, h2, h3, p {
       margin: 0;
       padding: 0;
@@ -95,24 +95,21 @@
     footer a {
       color: #ffffff;
       text-decoration: none;
-      margin: 10 10px;
+      margin: 30 40px;
       transition: transform 0.3s ease;
     }
 
-    footer a:hover {
-      transform: scale(1.2);
-    }
     #courses {
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
+      align-items: flex;
       flex-wrap: wrap;
       gap: 20px;
-      margin-top: 40px; /* Added margin for spacing */
+      margin-top: 40px; 
     }
 
     .course {
-      background-color: #ffffff;
+      background-color: rgb(191, 231, 255);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,7 +119,7 @@
     }
 
     .course:hover {
-      transform: translateY(-5px);
+      transform: translateY(5px);
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
 
@@ -131,13 +128,13 @@
       margin-bottom: 10px;
     }
 
-    /* Heading style */
+   
     #courses-heading {
       text-align: center;
       margin-top: 20px;
       color: #5e8cbc;
     }
-    /* About Me Section */
+    
     #about {
       overflow: hidden;
     }
@@ -175,8 +172,7 @@
     nav ul {
       list-style: none;
       display: flex;
-      justify-content: space-between;
-      padding: 0;
+      padding: 5;
     }
 
     nav ul li {
@@ -194,7 +190,7 @@
     }
 
     nav ul li a:hover {
-      color: #072856;
+      color: #ff1414;
     }
     #skills {
       text-align: center;
@@ -221,7 +217,8 @@
     }
 
     #skills a:hover {
-      background-color: #072856;
+      transform: scale(1.01);
+     
     }
 
     @keyframes float {
@@ -229,7 +226,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-10px);
+        transform: translateY(10px);
       }
       100% {
         transform: translateY(0);
@@ -237,7 +234,7 @@
     }
 
     /* Responsive styles */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
       header h1 {
         font-size: 30px;
       }
@@ -279,8 +276,7 @@
         <li><a href="#courses">Courses</a></li>
         <li><a href="#contact">Contact Me</a></li>
         <li><a href="#skills">Skills</a></li>
-
-      
+        
       </ul>
     </nav>
     <h1>Shashank S H</h1>
@@ -291,15 +287,26 @@
     <section id="about">
       <img src="profile.jpg" alt="Shashank's Photo">
       <h2>About Me</h2>
-      <p>"Technology enthusiast by day, aspiring innovator by night. I thrive on turning ideas into reality, utilizing my skills in coding, design, and problem-solving to create impactful solutions."</p>
+      <p><center>"Technology enthusiast by day, aspiring innovator by night. I thrive on turning ideas into reality, utilizing my skills in coding, design, and problem-solving to create impactful solutions."</p>
       <p>"Driven by a passion for continuous learning, I constantly seek new challenges that push the boundaries of my knowledge, allowing me to grow both personally and professionally."</p>
       <p>"I strongly believe in the power of collaboration and teamwork. I enjoy exchanging ideas with like-minded individuals, as I find inspiration in the diverse perspectives that others bring to the table."</p>
       <p>"Outside the realm of technology, I find solace in the world of art. Exploring different forms of creative expression fuels my imagination and often influences my approach to problem-solving."</p>
-    </section>
+      </center></section>
 
-    <main>
-      <h2 id="courses-heading">Courses Offered</h2>
+   
+      <ul id="skills">
+        <a href="#skills">Skills</a>
+        <ol>
+          <p>JavaScript
+            <p>Python
+              <p>HTML/CSS
+                <p>Java
       
+        </ol>
+      </li>
+    </ul>
+    <main>
+      <h2 id="courses-heading">Courses Offered By Me</h2>
       <section id="courses">
         <div class="course">
           <h3>Monthly Courses</h3>
@@ -350,17 +357,7 @@
       <a href="https://twitter.com/Foreverlegend71" target="_self"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"></a>
       <a href="https://www.linkedin.com/in/shashank-h-91b7482a8/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
     </section>
-    <li id="skills">
-      <a href="#skills">Skills</a>
-      <ol>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML/CSS</li>
-        <li>Java</li>
-        <!-- Add more skills as needed -->
-      </ol>
-    </li>
-  </ul>
+    
   </main>
   
 
