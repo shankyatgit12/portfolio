@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CarVista: E-Commerce Car Shopping Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6d5d5;
+        }
+
+        header {
+            background-color: #36454F;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .search-bar {
+            width: 200px;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: #fff;
+            color: #333;
+            width: 150px;
+        }
+
+
+        select option {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+
+        select option:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script>
+        function showAlertAndReload()
+        {
+            alert("Thank you for filling the form. We will contact you shortly.");
+            location.reload();
+        }
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <h1>CarVista</h1>
+        <p>
+            <nav>
+                <ul>
+                    <li><a href="ECOMMERCE INNOVATION DEVOPS[product].html">Home</a></li>
+                    <li><a href="CV about.html">About</a></li>
+                    <li><a href="refreshPage()">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section>
+        <h2>Let us Contact you</h2>
+        <form name="input" method="get" onsubmit="showAlertAndReload()">
+            Name: <input type="text" name="name" placeholder="John"><br><br>
+            Phone No.: <input type="number" name="phno" placeholder="9876543210"><br><br>
+            Email: <input type="mail" name="mail" placeholder="john@gmail.com"><br><br>
+            City: <input type="text" name="city" placeholder="Bangalore"><br><br>
+            Query: <br> <textarea id="query" name="query" rows="4" ></textarea><br><br>
+            <input type="submit" value="Submit">
+            
+            <input type="reset" value="Clear">
+        </form>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p>
+            Email: carvista2023@gmail.com<br>
+            Helpline: 080-2222-3333
+        </p>
+    </section>
+    <footer>
+        &copy; 2023. CarVista. All rights reserved.
+    </footer>
+</body>
+</html>

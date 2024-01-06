@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CarVista: E-Commerce Car Shopping Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d6d5d5;
+        }
+
+        header {
+            background-color: #36454F;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .search-bar {
+            width: 200px;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            background-color: #fff;
+            color: #333;
+            width: 150px;
+        }
+
+
+        select option {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+
+        select option:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <h1>CarVista</h1>
+        <p>
+        <nav>
+            <ul>
+                <li><a href="ECOMMERCE INNOVATION DEVOPS[product].html">Home</a></li>
+                <li><a href="CV about.html">About</a></li>
+                <li><a href="CV contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <h2>Welcome to our website!</h2>
+        <p>This is a E-Commerce car shopping website.</p>
+
+        <form id="carForm">
+            <select name="brands">
+                <option value="" disabled selected>Select a brand</option>
+                <option value="bmw">BMW</option>
+                <option value="hyundai">Hyundai</option>
+                <option value="tata">Tata</option>
+            </select>
+
+            <select name="cartypes">
+                <option value="" disabled selected>Select a cartype</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pickup truck</option>
+            </select>
+
+           <p> <input type="submit" value="Search">
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('carForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const selectedBrand = document.querySelector('select[name="brands"]').value;
+            const selectedType = document.querySelector('select[name="cartypes"]').value;
+
+            if (selectedBrand === 'tata' && selectedType === 'hatchback') {
+                window.location.href = 'redirect to tata hatchback cars.html';
+            } else if (selectedBrand === 'bmw' && selectedType === 'sedan') {
+                window.location.href = 'redirect to bmw sedan cars.html';
+            } else if (selectedBrand === 'bmw' && selectedType === 'suv') {
+                window.location.href = 'redirect to bmw SUV cars.html';
+            } else if (selectedBrand === 'bmw' && selectedType === 'hatchback') {
+                window.location.href = 'redirect to bmw hatchback cars.html';
+            } else if (selectedBrand === 'hyundai' && selectedType === 'sedan') {
+                window.location.href = 'redirect to hyundai sedan cars.html';
+            } else if (selectedBrand === 'hyundai' && selectedType === 'suv') {
+                window.location.href = 'redirect to hyundai SUV cars.html';
+            } else if (selectedBrand === 'hyundai' && selectedType === 'hatchback') {
+                window.location.href = 'redirect to hyundai hatchback cars.html';
+            } else if (selectedBrand === 'tata' && selectedType === 'sedan') {
+                window.location.href = 'redirect to tata sedan cars.html';
+            } else if (selectedBrand === 'tata' && selectedType === 'suv') {
+                window.location.href = 'redirect to tata SUV cars.html';
+            } else if (selectedBrand === 'tata' && selectedType === 'pickup') {
+                window.location.href = 'redirect to tata pickup truck.html';
+            } else {
+                // Handle other cases or brands/types if needed
+                alert('This type of combination of car type and brand does not exist. Please try another.');
+            }
+        });
+    </script>
+    </section>
+    <section>
+        <center>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://assets.porsche.com/gr/athens/-/media/Project/DealerWebsites/SharedDealersWebsite/Master-Model-Page/718/Header/Desktop/Header_718.jpg?rev=39b0a19af27f4fc4aa556b24619bf87b"
+                        style="width:50%;" border=2>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="https://e0.pxfuel.com/wallpapers/415/581/desktop-wallpaper-mahindra-thar-thar-car.jpg"
+                        style="width:40%;" border=2>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="https://i.pinimg.com/736x/7c/00/09/7c0009ec14fff245137e7a2cab6533bc.jpg"
+                        style="width:40%;" border=2>
+                </div> 
+
+                <div class="mySlides fade">
+                    <img src="https://www.bhmpics.com/downloads/innova-car-Wallpapers/18.30811_toyota_innova_crysta_2016_001.jpg"
+                        style="width:40%;" border=2>
+                </div>
+            </div>
+
+
+            <style>
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                }
+
+                img {
+                    vertical-align: middle;
+                }
+
+                /* Added styles for fade effect */
+                .fade {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                @keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+
+                    to {
+                        opacity: 1
+                    }
+                }
+            </style>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+            <footer>
+                © 2023. CarVista. All rights reserved.
+            </footer>
+
+</body>
+
+</html>
